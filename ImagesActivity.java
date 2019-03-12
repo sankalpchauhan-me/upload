@@ -34,7 +34,7 @@ public class ImagesActivity extends AppCompatActivity {
         recyclerView.setLayoutManager( new LinearLayoutManager(this));
 
 
-        mdatabaseref = FirebaseDatabase.getInstance().getReference().child("Profiles");
+        mdatabaseref = FirebaseDatabase.getInstance().getReference().child("uploads");
         mdatabaseref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
